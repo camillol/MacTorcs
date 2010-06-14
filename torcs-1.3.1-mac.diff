@@ -1,0 +1,785 @@
+Only in torcs-1.3.1-mac: .DS_Store
+Only in torcs-1.3.1-mac: MacTorcs
+diff -ru torcs-1.3.1/data/tracks/aalborg/Makefile torcs-1.3.1-mac/data/tracks/aalborg/Makefile
+--- torcs-1.3.1/data/tracks/aalborg/Makefile	2005-03-21 22:14:06.000000000 +0100
++++ torcs-1.3.1-mac/data/tracks/aalborg/Makefile	2010-05-31 23:45:00.000000000 +0200
+@@ -25,7 +25,7 @@
+ 			tr-curb-bw-aa-r.rgb grass-aa.rgb tr-g-to-asphalt-aa-l_n.rgb tr-grass-aa-l_n.rgb \
+ 			tr-asphalt-2-aa-r_n.rgb tr-asphalt-aa-bw2-e_n.rgb tr-asphalt-aa-bw2_n.rgb \
+ 			tarmac-wall-1-g2.rgb tr-asphalt-to-g-aa-l_n.rgb tr-asphalt-aa-bw2-s_n.rgb \
+-			aalborg.png background.png
++			background.png
+ 
+ data-tracks-road_PKGFILES	= $(DATA)
+ 
+diff -ru torcs-1.3.1/data/tracks/road/alpine-2/Makefile torcs-1.3.1-mac/data/tracks/road/alpine-2/Makefile
+--- torcs-1.3.1/data/tracks/road/alpine-2/Makefile	2008-06-05 01:09:11.000000000 +0200
++++ torcs-1.3.1-mac/data/tracks/road/alpine-2/Makefile	2010-05-31 23:45:00.000000000 +0200
+@@ -23,7 +23,7 @@
+ 			arbor2_n.rgb concrete2.rgb shadow2.rgb tr-stone-wall.rgb truck_arbor_berniw_n.rgb \
+ 			truck_arbor_dummy_n.rgb truck_arbor_hymie_n.rgb truck_arbor_inferno_n.rgb \
+ 			truck_arbor_mouse_n.rgb truck_arbor_ole_n.rgb truck_arbor_speedy_n.rgb \
+-			truck_arbor_tp_n.rgb truck_arbor_usr_n.rgb alpine-2.png armco2_arbor.png \
++			truck_arbor_tp_n.rgb truck_arbor_usr_n.rgb armco2_arbor.png \
+ 			armco_snow_arbor.png armcoturn_arbor.png background.png BARS_tree_n.png BLBDBK.png \
+ 			BLDG05_tree.png brick01.png cliff.png CMNTA.png concdark.png CONCRE.png \
+ 			concrete01.png concwall2.png concwall.png GRDRA_tree_n.png ice.png LOGOMELA.png \
+diff -ru torcs-1.3.1/data/tracks/road/forza/Makefile torcs-1.3.1-mac/data/tracks/road/forza/Makefile
+--- torcs-1.3.1/data/tracks/road/forza/Makefile	2008-02-24 13:55:08.000000000 +0100
++++ torcs-1.3.1-mac/data/tracks/road/forza/Makefile	2010-05-31 23:45:00.000000000 +0200
+@@ -23,7 +23,7 @@
+ 			100.png 300.png ABtree_n.png background.png BAtree_n.png BEtree_n.png \
+ 			BLBDBK.png BLDAB.png BLDA.png BLUPOLE.png BRtree_n.png BTOWB.png BUtree_n.png \
+ 			CAtree_n.png CHtree_n.png CMNTA.png CMNTBB.png CMNTB.png conc.png CONCTP.png CRNA.png \
+-			CRNB.png CRNC.png CRND.png CRNF.png DBLOGO.png FERRED.png FLTBLK.png FNCEB.png forza.png \
++			CRNB.png CRNC.png CRND.png CRNF.png DBLOGO.png FERRED.png FLTBLK.png FNCEB.png \
+ 			FRRI.png FRtree_n.png G2tree_n.png GBtree_n.png GCtree_n.png GDtree_n.png GEtree_n.png \
+ 			GFtree_n.png GGtree.png GNtree_n.png GRAS2B.png GRtree_n.png GSBLUE.png GSBSTAIR.png \
+ 			GSDH.png GSPAtree.png GSRNDF.png GSSOLID.png GStree_n.png GSUNDER.png ITtree_n.png \
+diff -ru torcs-1.3.1/data/tracks/road/ruudskogen/Makefile torcs-1.3.1-mac/data/tracks/road/ruudskogen/Makefile
+--- torcs-1.3.1/data/tracks/road/ruudskogen/Makefile	2006-08-19 23:52:07.000000000 +0200
++++ torcs-1.3.1-mac/data/tracks/road/ruudskogen/Makefile	2010-05-31 23:45:00.000000000 +0200
+@@ -20,7 +20,7 @@
+ DATADIR   = tracks/road/$(TRACK)
+ 
+ DATA      = $(TRACK).xml $(TRACK).acc $(TRACK).png readme.txt background.png shadow2.rgb \
+-			env.png arb01_n.png arb02_n.png background.png dekk01.png grass01.png \
++			env.png arb01_n.png arb02_n.png dekk01.png grass01.png \
+ 			grass02.png hus02.png hytte01.png lave01.png lave02.png rk_tree_1_n.png \
+ 			rk_tree_2_n.png rk_tree_3_n.png road01-dashlines.png road01-pitentry.png \
+ 			road01-pits_n.png road01.png road02.png road03.png road-edge.png \
+diff -ru torcs-1.3.1/data/tracks/road/wheel-2/Makefile torcs-1.3.1-mac/data/tracks/road/wheel-2/Makefile
+--- torcs-1.3.1/data/tracks/road/wheel-2/Makefile	2008-02-24 15:24:44.000000000 +0100
++++ torcs-1.3.1-mac/data/tracks/road/wheel-2/Makefile	2010-05-31 23:45:00.000000000 +0200
+@@ -24,7 +24,7 @@
+ 			background.png building1.png building2.png clkdtm.png girder_tree_n.png grass.png \
+ 			rmbl.png sand.png sbridge2.png shadow2.png sign1.png sign2.png sign3.png swall2.png \
+ 			tirewall.png tr-barrier.png tr-barrier-tree_n.png treeg11_n.png treeline.png \
+-			tree_n.png tr-spec.png truck_arbor_ctd_n.png water_green2.png wheel-2.png wheel.png \
++			tree_n.png tr-spec.png truck_arbor_ctd_n.png water_green2.png wheel.png \
+ 			barr1_n.rgb concdal.rgb shadow2.rgb texwheel.rgb torcs1.rgb truck0.rgb
+ 
+ 
+diff -ru torcs-1.3.1/src/drivers/olethros/driver.cpp torcs-1.3.1-mac/src/drivers/olethros/driver.cpp
+--- torcs-1.3.1/src/drivers/olethros/driver.cpp	2008-05-31 00:18:32.000000000 +0200
++++ torcs-1.3.1-mac/src/drivers/olethros/driver.cpp	2010-05-31 23:45:00.000000000 +0200
+@@ -41,6 +41,8 @@
+ #ifdef WIN32
+ #include <float.h>
+ #define isnan _isnan
++#elif defined(__APPLE__)
++#include "isnan.h"
+ #endif
+ 
+ #undef TEST_PITSTOPS
+diff -ru torcs-1.3.1/src/drivers/olethros/geometry.cpp torcs-1.3.1-mac/src/drivers/olethros/geometry.cpp
+--- torcs-1.3.1/src/drivers/olethros/geometry.cpp	2006-01-06 16:22:29.000000000 +0100
++++ torcs-1.3.1-mac/src/drivers/olethros/geometry.cpp	2010-05-31 23:45:00.000000000 +0200
+@@ -27,6 +27,8 @@
+ #ifdef WIN32
+ #include <float.h>
+ #define isnan _isnan
++#elif defined(__APPLE__)
++#include "isnan.h"
+ #endif
+ 
+ 
+diff -ru torcs-1.3.1/src/libs/client/splash.cpp torcs-1.3.1-mac/src/libs/client/splash.cpp
+--- torcs-1.3.1/src/libs/client/splash.cpp	2008-08-16 16:58:51.000000000 +0200
++++ torcs-1.3.1-mac/src/libs/client/splash.cpp	2010-05-31 23:45:00.000000000 +0200
+@@ -20,7 +20,11 @@
+ #include <windows.h>
+ #define HAVE_CONFIG_H
+ #endif
+-#include <GL/glut.h>
++#ifdef __APPLE__
++    #include <GLUT/glut.h>
++#else
++    #include <GL/glut.h>
++#endif
+ #include <stdlib.h>
+ #include <stdio.h>
+ 
+diff -ru torcs-1.3.1/src/libs/learning/policy.cpp torcs-1.3.1-mac/src/libs/learning/policy.cpp
+--- torcs-1.3.1/src/libs/learning/policy.cpp	2005-09-19 14:48:03.000000000 +0200
++++ torcs-1.3.1-mac/src/libs/learning/policy.cpp	2010-05-31 23:45:00.000000000 +0200
+@@ -18,7 +18,9 @@
+ #ifdef WIN32
+ #include <float.h>
+ #define isnan _isnan
+-#endif // WIN32
++#elif defined(__APPLE__)
++#include "isnan.h"
++#endif
+ 
+ #undef POLICY_LOG
+ 
+diff -ru torcs-1.3.1/src/libs/tgfclient/fg_gm.cpp torcs-1.3.1-mac/src/libs/tgfclient/fg_gm.cpp
+--- torcs-1.3.1/src/libs/tgfclient/fg_gm.cpp	2008-11-09 18:50:22.000000000 +0100
++++ torcs-1.3.1-mac/src/libs/tgfclient/fg_gm.cpp	2010-05-31 23:45:00.000000000 +0200
+@@ -42,8 +42,13 @@
+ 	2004/10/03 Bernhard Wymann: Added Randr support, bugfixes.
+ */
+ 
++#ifdef __APPLE__
++#include <OpenGL/gl.h>
++#include <OpenGL/glu.h>
++#else
+ #include <GL/gl.h>
+ #include <GL/glu.h>
++#endif
+ #include <stdio.h>
+ #include <stdlib.h>
+ #include <math.h>
+@@ -51,7 +56,7 @@
+ #include <tgfclient.h>
+ #include "fg_gm.h"
+ 
+-#ifndef WIN32
++#if !defined(WIN32) && !defined(__APPLE__)
+ 
+ #include <GL/glx.h>
+ #include <X11/Xlib.h>
+@@ -468,7 +473,7 @@
+  */
+ void fglutGameModeString( const char* string )
+ {
+-#ifndef WIN32
++#if !defined(WIN32) && !defined(__APPLE__)
+     int width = 640, height = 480, depth = 16, refresh = 72;
+ 
+     /*
+@@ -501,7 +506,7 @@
+  */
+ int fglutEnterGameMode( void )
+ {
+-#ifndef WIN32
++#if !defined(WIN32) && !defined(__APPLE__)
+     /*
+      * Remember the current resolution, etc.
+      */
+@@ -529,7 +534,7 @@
+  */
+ void fglutLeaveGameMode( void )
+ {
+-#ifndef WIN32
++#if !defined(WIN32) && !defined(__APPLE__)
+     /*
+      * Then, have the desktop visual settings restored
+      */
+diff -ru torcs-1.3.1/src/libs/tgfclient/glfeatures.h torcs-1.3.1-mac/src/libs/tgfclient/glfeatures.h
+--- torcs-1.3.1/src/libs/tgfclient/glfeatures.h	2005-08-05 11:26:39.000000000 +0200
++++ torcs-1.3.1-mac/src/libs/tgfclient/glfeatures.h	2010-05-31 23:45:00.000000000 +0200
+@@ -28,14 +28,16 @@
+ #ifndef _GRFEATURES_H_
+ #define _GRFEATURES_H_
+ 
+-#ifdef WIN32
+-#include <windows.h>
+-#include <GL/gl.h>
+-#include <GL/glext.h>
+-#else
+-#include <GL/gl.h>
+-#endif // WIN32
+-
++#ifdef WIN32
++#include <windows.h>
++#include <GL/gl.h>
++#include <GL/glext.h>
++#elif defined(__APPLE__)
++#include <OpenGL/gl.h>
++#else
++#include <GL/gl.h>
++#endif // WIN32
++
+ #include <tgfclient.h>
+ #include <graphic.h>
+ 
+diff -ru torcs-1.3.1/src/libs/tgfclient/guifont.cpp torcs-1.3.1-mac/src/libs/tgfclient/guifont.cpp
+--- torcs-1.3.1/src/libs/tgfclient/guifont.cpp	2008-11-09 18:50:22.000000000 +0100
++++ torcs-1.3.1-mac/src/libs/tgfclient/guifont.cpp	2010-05-31 23:45:00.000000000 +0200
+@@ -24,7 +24,7 @@
+ 
+ #ifdef WIN32
+ #include <windows.h>
+-#elif defined(__FreeBSD__)
++#elif defined(__FreeBSD__) || defined(__APPLE__)
+ #include <machine/endian.h>
+ #else
+ #include <endian.h>
+diff -ru torcs-1.3.1/src/libs/tgfclient/guimenu.cpp torcs-1.3.1-mac/src/libs/tgfclient/guimenu.cpp
+--- torcs-1.3.1/src/libs/tgfclient/guimenu.cpp	2008-11-09 18:50:22.000000000 +0100
++++ torcs-1.3.1-mac/src/libs/tgfclient/guimenu.cpp	2010-05-31 23:45:00.000000000 +0200
+@@ -29,7 +29,11 @@
+ #ifdef WIN32
+ #include <windows.h>
+ #endif
+-#include <GL/glut.h>
++#ifdef __APPLE__
++    #include <GLUT/glut.h>
++#else
++    #include <GL/glut.h>
++#endif
+ 
+ #include <tgfclient.h>
+ #include "gui.h"
+diff -ru torcs-1.3.1/src/libs/tgfclient/img.cpp torcs-1.3.1-mac/src/libs/tgfclient/img.cpp
+--- torcs-1.3.1/src/libs/tgfclient/img.cpp	2006-10-29 16:55:33.000000000 +0100
++++ torcs-1.3.1-mac/src/libs/tgfclient/img.cpp	2010-05-31 23:45:00.000000000 +0200
+@@ -28,7 +28,11 @@
+ #include <windows.h>
+ #endif
+ 
++#ifdef __APPLE__
++#include <libpng/png.h>
++#else
+ #include "png.h"
++#endif
+ 
+ #include <tgfclient.h>
+ #include <stdlib.h>
+diff -ru torcs-1.3.1/src/libs/tgfclient/screen.cpp torcs-1.3.1-mac/src/libs/tgfclient/screen.cpp
+--- torcs-1.3.1/src/libs/tgfclient/screen.cpp	2008-11-09 18:50:22.000000000 +0100
++++ torcs-1.3.1-mac/src/libs/tgfclient/screen.cpp	2010-06-01 00:25:56.000000000 +0200
+@@ -27,7 +27,12 @@
+ #ifdef WIN32
+ #include <windows.h>
+ #endif
+-#include <GL/glut.h>
++#ifdef __APPLE__
++    #include <GLUT/glut.h>
++    #include <CoreFoundation/CoreFoundation.h>
++#else
++    #include <GL/glut.h>
++#endif
+ #include <math.h>
+ #ifndef WIN32
+ #include <unistd.h>
+@@ -248,6 +253,19 @@
+     int		maxfreq;
+     int		i, depth;
+ 
++#ifdef __APPLE__
++    /*  glutInit chdirs into the resource directory, but GfScrInit attempts to access the config
++        files before calling it. Set the working directory in advance, so that the configuration
++	    files can be found. We could also move glutInit here on OS X. */
++    char *resPath;
++    CFURLRef resDir = CFBundleCopyResourcesDirectoryURL(CFBundleGetMainBundle());
++    resPath = (char *)malloc(4096);
++    CFURLGetFileSystemRepresentation(resDir, true, (UInt8 *)resPath, 4096);
++    chdir(resPath);
++    free(resPath);
++    CFRelease(resDir);
++#endif
++	
+     sprintf(buf, "%s%s", GetLocalDir(), GFSCR_CONF_FILE);
+     handle = GfParmReadFile(buf, GFPARM_RMODE_STD | GFPARM_RMODE_CREAT);
+     xw = (int)GfParmGetNum(handle, GFSCR_SECT_PROP, GFSCR_ATT_X, (char*)NULL, 640);
+@@ -487,7 +505,7 @@
+ 	static const int CMDSIZE = 1024;
+ 	char cmd[CMDSIZE];
+ 
+-#ifndef WIN32
++#if !defined(WIN32) && !defined(__APPLE__)
+     char	*arg[8];
+     int		curArg;
+ #endif
+@@ -515,6 +533,24 @@
+ #else
+     GfScrShutdown();
+ 
++#ifdef __APPLE__
++    /*  On Mac OS X, a multithreaded process cannot call exec. Therefore, we fork first. */
++    CFURLRef binUrl = CFBundleCopyExecutableURL(CFBundleGetMainBundle());
++    CFURLGetFileSystemRepresentation(binUrl, true, (UInt8 *)cmd, sizeof(cmd));
++    CFRelease(binUrl);
++	pid_t pid = fork();
++	if (pid == 0) {	/* child */
++		execl(cmd, cmd, NULL);
++		perror("exec failed");
++		exit(1);
++	}
++	else if (pid > 0) {	/* parent */
++		exit(0);
++	}
++	perror("fork failed");
++	exit(1);
++#else
++	
+     sprintf (cmd, "%storcs-bin", GetLibDir ());
+     memset (arg, 0, sizeof (arg));
+     curArg = 0;
+@@ -567,8 +603,8 @@
+ 	break;
+     }
+ 
+-
+-#endif
++#endif // __APPLE__
++#endif // WIN32
+     if (retcode) {
+ 	perror("torcs");
+ 	exit(1);
+diff -ru torcs-1.3.1/src/libs/tgfclient/tgfclient.h torcs-1.3.1-mac/src/libs/tgfclient/tgfclient.h
+--- torcs-1.3.1/src/libs/tgfclient/tgfclient.h	2008-08-16 16:12:08.000000000 +0200
++++ torcs-1.3.1-mac/src/libs/tgfclient/tgfclient.h	2010-05-31 23:45:01.000000000 +0200
+@@ -28,7 +28,11 @@
+ #define __TGFCLIENT__H__
+ 
+ #include <tgf.h>
+-#include <GL/glut.h>
++#ifdef __APPLE__
++    #include <GLUT/glut.h>
++#else
++    #include <GL/glut.h>
++#endif
+ #include <js.h>
+ #include <screen_properties.h>
+ 
+diff -ru torcs-1.3.1/src/linux/main.cpp torcs-1.3.1-mac/src/linux/main.cpp
+--- torcs-1.3.1/src/linux/main.cpp	2008-11-09 18:50:22.000000000 +0100
++++ torcs-1.3.1-mac/src/linux/main.cpp	2010-05-31 23:45:01.000000000 +0200
+@@ -19,7 +19,11 @@
+ 
+ #include <stdlib.h>
+ 
+-#include <GL/glut.h>
++#ifdef __APPLE__
++    #include <GLUT/glut.h>
++#else
++    #include <GL/glut.h>
++#endif
+ 
+ #include <tgfclient.h>
+ #include <client.h>
+diff -ru torcs-1.3.1/src/modules/graphic/ssggraph/OpenalSoundInterface.cpp torcs-1.3.1-mac/src/modules/graphic/ssggraph/OpenalSoundInterface.cpp
+--- torcs-1.3.1/src/modules/graphic/ssggraph/OpenalSoundInterface.cpp	2006-01-05 10:53:37.000000000 +0100
++++ torcs-1.3.1-mac/src/modules/graphic/ssggraph/OpenalSoundInterface.cpp	2010-05-31 23:45:01.000000000 +0200
+@@ -164,7 +164,7 @@
+ void OpenalSoundInterface::setNCars(int n_cars)
+ {
+ 	engpri = new SoundPri[n_cars];
+-	car_src = new SoundSource[n_cars];
++	car_src = new TorcsSoundSource[n_cars];
+ }
+ 
+ 
+diff -ru torcs-1.3.1/src/modules/graphic/ssggraph/PlibSoundInterface.cpp torcs-1.3.1-mac/src/modules/graphic/ssggraph/PlibSoundInterface.cpp
+--- torcs-1.3.1/src/modules/graphic/ssggraph/PlibSoundInterface.cpp	2005-11-18 01:20:32.000000000 +0100
++++ torcs-1.3.1-mac/src/modules/graphic/ssggraph/PlibSoundInterface.cpp	2010-05-31 23:45:01.000000000 +0200
+@@ -60,7 +60,7 @@
+ void PlibSoundInterface::setNCars(int n_cars)
+ {
+ 	engpri = new SoundPri[n_cars];
+-	car_src = new SoundSource[n_cars];
++	car_src = new TorcsSoundSource[n_cars];
+ }
+ 
+ slScheduler* PlibSoundInterface::getScheduler()
+diff -ru torcs-1.3.1/src/modules/graphic/ssggraph/SoundInterface.h torcs-1.3.1-mac/src/modules/graphic/ssggraph/SoundInterface.h
+--- torcs-1.3.1/src/modules/graphic/ssggraph/SoundInterface.h	2005-11-18 01:20:32.000000000 +0100
++++ torcs-1.3.1-mac/src/modules/graphic/ssggraph/SoundInterface.h	2010-05-31 23:45:01.000000000 +0200
+@@ -241,8 +241,8 @@
+ 	slScheduler* sched;
+ 	std::vector<TorcsSound*> sound_list;
+ 	SoundPri* engpri;
+-	SoundSource* car_src;
+-	SoundSource tyre_src[4];
++	TorcsSoundSource* car_src;
++	TorcsSoundSource tyre_src[4];
+ 	void DopplerShift (SoundChar* sound, float* p_src, float* u_src, float* p, float* u);
+ 	void SetMaxSoundCar(CarSoundData** car_sound_data, QueueSoundMap* smap);
+ 	float global_gain;
+@@ -274,8 +274,8 @@
+ 		float a; //amplitude modulation
+ 	} SoundChar;
+  protected:
+-	SoundSource* car_src;
+-	SoundSource tyre_src[4];
++	TorcsSoundSource* car_src;
++	TorcsSoundSource tyre_src[4];
+ 	ALCcontext* cc;
+ 	ALCdevice* dev;
+ 	float global_gain;
+diff -ru torcs-1.3.1/src/modules/graphic/ssggraph/TorcsSound.cpp torcs-1.3.1-mac/src/modules/graphic/ssggraph/TorcsSound.cpp
+--- torcs-1.3.1/src/modules/graphic/ssggraph/TorcsSound.cpp	2005-11-18 01:20:32.000000000 +0100
++++ torcs-1.3.1-mac/src/modules/graphic/ssggraph/TorcsSound.cpp	2010-05-31 23:45:01.000000000 +0200
+@@ -186,7 +186,7 @@
+ }
+ 
+ /// Create a sound source
+-SoundSource::SoundSource()
++TorcsSoundSource::TorcsSoundSource()
+ {
+ 	a = 0.0;
+ 	f = 1.0;
+@@ -198,7 +198,7 @@
+  * At the moment this
+  */
+ 
+-void SoundSource::update()
++void TorcsSoundSource::update()
+ {
+ 	// Get relative speed/position vector
+ 	sgVec3 u;
+@@ -259,7 +259,7 @@
+ 
+ /** Set source position and velocity.
+  */
+-void SoundSource::setSource(sgVec3 p, sgVec3 u)
++void TorcsSoundSource::setSource(sgVec3 p, sgVec3 u)
+ {
+ 	for (int i=0; i<3; i++) {
+ 		p_src[i] = p[i];
+@@ -269,7 +269,7 @@
+ 
+ /** Set listener position and velocity.
+  */
+-void SoundSource::setListener (sgVec3 p, sgVec3 u)
++void TorcsSoundSource::setListener (sgVec3 p, sgVec3 u)
+ {
+ 	for (int i=0; i<3; i++) {
+ 		p_lis[i] = p[i];
+@@ -330,7 +330,11 @@
+ 	ALenum format;
+ 	ALboolean srcloop;
+ 
++#ifdef __APPLE__
++	alutLoadWAVFile((ALbyte *) filename, &format, &wave, &size, &freq);
++#else
+ 	alutLoadWAVFile((ALbyte *) filename, &format, &wave, &size, &freq, &srcloop);
++#endif
+ 	error = alGetError();
+ 	if (error != AL_NO_ERROR) {
+ 		printf("OpenAL Error: %d, could not load %s\n", error, filename);
+diff -ru torcs-1.3.1/src/modules/graphic/ssggraph/TorcsSound.h torcs-1.3.1-mac/src/modules/graphic/ssggraph/TorcsSound.h
+--- torcs-1.3.1/src/modules/graphic/ssggraph/TorcsSound.h	2005-11-18 01:20:32.000000000 +0100
++++ torcs-1.3.1-mac/src/modules/graphic/ssggraph/TorcsSound.h	2010-05-31 23:45:01.000000000 +0200
+@@ -26,9 +26,15 @@
+ 
+ #include <plib/sg.h>
+ #include <plib/sl.h>
++#ifdef __APPLE__
++#include <OpenAL/al.h>
++#include <OpenAL/alc.h>
++#include <freealut/alut.h>
++#else
+ #include <AL/al.h>
+ #include <AL/alc.h>
+ #include <AL/alut.h>
++#endif
+ #include "sound_defines.h"
+ 
+ class SoundInterface;
+@@ -136,7 +142,7 @@
+  * principle possible to implement multiple listeners, something which
+  * should be extremely useful for same-computer multiplayer games.
+  */
+-class SoundSource {
++class TorcsSoundSource {
+ public:
+ 	sgVec3 p_lis; ///< listener position for this source
+ 	sgVec3 u_lis; ///< listener velocity for this source
+@@ -145,7 +151,7 @@
+ 	float a; ///< Environmental attenuation
+     float f; ///< Environmental frequency shift
+     float lp; ///< Environmental filtering
+-	SoundSource();
++	TorcsSoundSource();
+ 	void update();
+ 	void setSource(sgVec3 p, sgVec3 u);
+ 	void setListener (sgVec3 p, sgVec3 u);
+@@ -174,7 +180,7 @@
+ public:
+ 	OpenalTorcsSound(const char* filename,
+ 					 OpenalSoundInterface* sitf,
+-					 int flags = (ACTIVE_VOLUME|ACTIVE_PITCH),
++					 int flags = (ACTIVE_VOLUME|ACTIVE_PITCH),
+ 					 bool loop = false, bool static_pool = true);
+ 	virtual ~OpenalTorcsSound();
+ 	virtual void setVolume(float vol);
+@@ -182,7 +188,7 @@
+ 	virtual void setLPFilter(float lp);
+ 	virtual void setSource(sgVec3 p, sgVec3 u);
+ 	virtual void getSource (sgVec3 p, sgVec3 u);
+-	virtual void setReferenceDistance (float dist);
++	virtual void setReferenceDistance (float dist);
+ 	//virtual void setListener (sgVec3 p, sgVec3 u);
+ 	virtual void play();
+ 	virtual void start();
+diff -ru torcs-1.3.1/src/modules/graphic/ssggraph/grcam.cpp torcs-1.3.1-mac/src/modules/graphic/ssggraph/grcam.cpp
+--- torcs-1.3.1/src/modules/graphic/ssggraph/grcam.cpp	2007-11-06 21:43:31.000000000 +0100
++++ torcs-1.3.1-mac/src/modules/graphic/ssggraph/grcam.cpp	2010-05-31 23:45:01.000000000 +0200
+@@ -21,11 +21,16 @@
+ #include <stdlib.h>
+ #include <math.h>
+ #include <memory.h>
++#ifdef __APPLE__
++#include <OpenGL/gl.h>
++#include <OpenGL/glu.h>
++#else
+ #ifdef WIN32
+ #include <windows.h>
+ #endif
+ #include <GL/gl.h>
+ #include <GL/glu.h>
++#endif
+ #include <plib/ssg.h>
+ 
+ #include <robottools.h>
+diff -ru torcs-1.3.1/src/modules/graphic/ssggraph/grcar.cpp torcs-1.3.1-mac/src/modules/graphic/ssggraph/grcar.cpp
+--- torcs-1.3.1/src/modules/graphic/ssggraph/grcar.cpp	2008-08-24 21:26:46.000000000 +0200
++++ torcs-1.3.1-mac/src/modules/graphic/ssggraph/grcar.cpp	2010-05-31 23:45:01.000000000 +0200
+@@ -26,7 +26,11 @@
+ #ifdef WIN32
+ #include <windows.h>
+ #endif
+-#include <GL/glut.h>
++#ifdef __APPLE__
++    #include <GLUT/glut.h>
++#else
++    #include <GL/glut.h>
++#endif
+ #include <plib/ssg.h>
+ 
+ #include <tgfclient.h>
+diff -ru torcs-1.3.1/src/modules/graphic/ssggraph/grcarlight.cpp torcs-1.3.1-mac/src/modules/graphic/ssggraph/grcarlight.cpp
+--- torcs-1.3.1/src/modules/graphic/ssggraph/grcarlight.cpp	2008-08-29 01:24:54.000000000 +0200
++++ torcs-1.3.1-mac/src/modules/graphic/ssggraph/grcarlight.cpp	2010-05-31 23:45:01.000000000 +0200
+@@ -25,7 +25,11 @@
+ #ifdef WIN32
+ #include <windows.h>
+ #endif
+-#include <GL/glut.h>
++#ifdef __APPLE__
++    #include <GLUT/glut.h>
++#else
++    #include <GL/glut.h>
++#endif
+ #include <plib/ssg.h>
+ 
+ #include <tgfclient.h>
+diff -ru torcs-1.3.1/src/modules/graphic/ssggraph/grmain.cpp torcs-1.3.1-mac/src/modules/graphic/ssggraph/grmain.cpp
+--- torcs-1.3.1/src/modules/graphic/ssggraph/grmain.cpp	2005-08-05 11:48:29.000000000 +0200
++++ torcs-1.3.1-mac/src/modules/graphic/ssggraph/grmain.cpp	2010-05-31 23:45:01.000000000 +0200
+@@ -23,7 +23,11 @@
+ #ifdef WIN32
+ #include <windows.h>
+ #endif
+-#include <GL/glut.h>
++#ifdef __APPLE__
++    #include <GLUT/glut.h>
++#else
++    #include <GL/glut.h>
++#endif
+ #include <plib/ssg.h>
+ 
+ #include <tgfclient.h>
+diff -ru torcs-1.3.1/src/modules/graphic/ssggraph/grscene.cpp torcs-1.3.1-mac/src/modules/graphic/ssggraph/grscene.cpp
+--- torcs-1.3.1/src/modules/graphic/ssggraph/grscene.cpp	2006-02-20 21:16:09.000000000 +0100
++++ torcs-1.3.1-mac/src/modules/graphic/ssggraph/grscene.cpp	2010-05-31 23:45:01.000000000 +0200
+@@ -28,7 +28,11 @@
+ #include <GL/gl.h>
+ #include <GL/glext.h>
+ #endif
+-#include <GL/glut.h>
++#ifdef __APPLE__
++    #include <GLUT/glut.h>
++#else
++    #include <GL/glut.h>
++#endif
+ #include <plib/ssg.h>
+ #include <plib/ssgAux.h>
+ #include <tgfclient.h>
+diff -ru torcs-1.3.1/src/modules/graphic/ssggraph/grskidmarks.cpp torcs-1.3.1-mac/src/modules/graphic/ssggraph/grskidmarks.cpp
+--- torcs-1.3.1/src/modules/graphic/ssggraph/grskidmarks.cpp	2005-12-25 02:22:06.000000000 +0100
++++ torcs-1.3.1-mac/src/modules/graphic/ssggraph/grskidmarks.cpp	2010-05-31 23:45:01.000000000 +0200
+@@ -26,7 +26,11 @@
+ #ifdef WIN32
+ #include <windows.h>
+ #endif
+-#include <GL/glut.h>
++#ifdef __APPLE__
++    #include <GLUT/glut.h>
++#else
++    #include <GL/glut.h>
++#endif
+ #include <plib/ssg.h>
+ 
+ #include <tgfclient.h>
+diff -ru torcs-1.3.1/src/modules/graphic/ssggraph/grsmoke.cpp torcs-1.3.1-mac/src/modules/graphic/ssggraph/grsmoke.cpp
+--- torcs-1.3.1/src/modules/graphic/ssggraph/grsmoke.cpp	2005-07-21 23:27:15.000000000 +0200
++++ torcs-1.3.1-mac/src/modules/graphic/ssggraph/grsmoke.cpp	2010-05-31 23:45:01.000000000 +0200
+@@ -24,7 +24,11 @@
+ #ifdef WIN32
+ #include <windows.h>
+ #endif
+-#include <GL/glut.h>
++#ifdef __APPLE__
++    #include <GLUT/glut.h>
++#else
++    #include <GL/glut.h>
++#endif
+ #include <plib/ssg.h>
+ 
+ #include <tgfclient.h>
+diff -ru torcs-1.3.1/src/modules/graphic/ssggraph/grtrackmap.h torcs-1.3.1-mac/src/modules/graphic/ssggraph/grtrackmap.h
+--- torcs-1.3.1/src/modules/graphic/ssggraph/grtrackmap.h	2005-08-05 11:48:30.000000000 +0200
++++ torcs-1.3.1-mac/src/modules/graphic/ssggraph/grtrackmap.h	2010-05-31 23:45:01.000000000 +0200
+@@ -29,9 +29,15 @@
+ 
+ #include <car.h>
+ #include <raceman.h>
+-#include <GL/gl.h>
+-#include <GL/glut.h>
+-#include <GL/glu.h>
++#ifdef __APPLE__
++    #include <OpenGL/gl.h>
++    #include <OpenGL/glu.h>
++    #include <GLUT/glut.h>
++#else
++    #include <GL/gl.h>
++    #include <GL/glu.h>
++    #include <GL/glut.h>
++#endif
+ 
+ #ifndef WIN32
+ #include <unistd.h>
+diff -ru torcs-1.3.1/src/modules/graphic/ssggraph/grutil.cpp torcs-1.3.1-mac/src/modules/graphic/ssggraph/grutil.cpp
+--- torcs-1.3.1/src/modules/graphic/ssggraph/grutil.cpp	2008-11-09 18:50:22.000000000 +0100
++++ torcs-1.3.1-mac/src/modules/graphic/ssggraph/grutil.cpp	2010-05-31 23:45:01.000000000 +0200
+@@ -25,7 +25,11 @@
+ #ifdef WIN32
+ #include <windows.h>
+ #endif
+-#include <GL/glut.h>
++#ifdef __APPLE__
++    #include <GLUT/glut.h>
++#else
++    #include <GL/glut.h>
++#endif
+ #include <plib/ssg.h>
+ 
+ #include <tgfclient.h>
+diff -ru torcs-1.3.1/src/modules/graphic/ssggraph/grvtxtable.cpp torcs-1.3.1-mac/src/modules/graphic/ssggraph/grvtxtable.cpp
+--- torcs-1.3.1/src/modules/graphic/ssggraph/grvtxtable.cpp	2005-09-19 21:00:57.000000000 +0200
++++ torcs-1.3.1-mac/src/modules/graphic/ssggraph/grvtxtable.cpp	2010-05-31 23:45:01.000000000 +0200
+@@ -31,7 +31,11 @@
+ #include "grscene.h"
+ #include "grcar.h"
+ #include "grutil.h"
++#ifdef __APPLE__
++#include <OpenGL/glu.h>
++#else
+ #include <GL/glu.h>
++#endif
+ 
+ /* from grloadac.cpp (beuark!) */
+ extern double shad_xmax;
+diff -ru torcs-1.3.1/src/modules/graphic/ssggraph/ssggraph.cpp torcs-1.3.1-mac/src/modules/graphic/ssggraph/ssggraph.cpp
+--- torcs-1.3.1/src/modules/graphic/ssggraph/ssggraph.cpp	2005-02-01 20:08:19.000000000 +0100
++++ torcs-1.3.1-mac/src/modules/graphic/ssggraph/ssggraph.cpp	2010-05-31 23:45:01.000000000 +0200
+@@ -20,7 +20,11 @@
+ #ifdef WIN32
+ #include <windows.h>
+ #endif
+-#include <GL/gl.h>
++#ifdef __APPLE__
++    #include <OpenGL/gl.h>
++#else
++    #include <GL/gl.h>
++#endif
+ 
+ #include <tgfclient.h>
+ 
+diff -ru torcs-1.3.1/src/modules/simu/simuv2/SOLID-2.0/src/C-api.cpp torcs-1.3.1-mac/src/modules/simu/simuv2/SOLID-2.0/src/C-api.cpp
+--- torcs-1.3.1/src/modules/simu/simuv2/SOLID-2.0/src/C-api.cpp	2006-04-28 01:33:35.000000000 +0200
++++ torcs-1.3.1-mac/src/modules/simu/simuv2/SOLID-2.0/src/C-api.cpp	2010-05-31 23:45:01.000000000 +0200
+@@ -23,10 +23,10 @@
+ 		  Eindhoven University of Technology
+ 		  P.O. Box 513, 5600 MB Eindhoven, The Netherlands
+ */
+-
+-#ifdef _MSC_VER
+-#pragma warning(disable:4786) // identifier was truncated to '255'
+-#endif // _MSC_VER
++
++#ifdef _MSC_VER
++#pragma warning(disable:4786) // identifier was truncated to '255'
++#endif // _MSC_VER
+ 
+ #include <SOLID/solid.h>
+ 
+@@ -44,7 +44,7 @@
+ #include "Polyhedron.h"
+ #include "Response.h"
+ #include "RespTable.h"
+-#if defined(__FreeBSD__) || defined(__OpenBSD__) || defined(__NetBSD__)
++#if defined(__FreeBSD__) || defined(__OpenBSD__) || defined(__NetBSD__) || defined(__APPLE__)
+ #  include <sys/types.h>
+ #endif
+ 
+diff -ru torcs-1.3.1/src/tools/texmapper/maintexmapper.cpp torcs-1.3.1-mac/src/tools/texmapper/maintexmapper.cpp
+--- torcs-1.3.1/src/tools/texmapper/maintexmapper.cpp	2008-11-09 18:50:23.000000000 +0100
++++ torcs-1.3.1-mac/src/tools/texmapper/maintexmapper.cpp	2010-05-31 23:45:01.000000000 +0200
+@@ -28,7 +28,11 @@
+ #include <getopt.h>
+ #include <math.h>
+ #include <plib/ssg.h>
+-#include <GL/glut.h>
++#ifdef __APPLE__
++    #include <GLUT/glut.h>
++#else
++    #include <GL/glut.h>
++#endif
+ 
+ #include <tgfclient.h>
+ 
+diff -ru torcs-1.3.1/src/tools/trackgen/maintrackgen.cpp torcs-1.3.1-mac/src/tools/trackgen/maintrackgen.cpp
+--- torcs-1.3.1/src/tools/trackgen/maintrackgen.cpp	2008-11-09 18:50:23.000000000 +0100
++++ torcs-1.3.1-mac/src/tools/trackgen/maintrackgen.cpp	2010-05-31 23:45:01.000000000 +0200
+@@ -37,7 +37,11 @@
+ #include <math.h>
+ #include <plib/ul.h>
+ #include <plib/ssg.h>
+-#include <GL/glut.h>
++#ifdef __APPLE__
++    #include <GLUT/glut.h>
++#else
++    #include <GL/glut.h>
++#endif
+ 
+ #include <tgfclient.h>
+ #include <track.h>
+diff -ru torcs-1.3.1/src/tools/trackgen/objects.cpp torcs-1.3.1-mac/src/tools/trackgen/objects.cpp
+--- torcs-1.3.1/src/tools/trackgen/objects.cpp	2008-11-09 18:50:23.000000000 +0100
++++ torcs-1.3.1-mac/src/tools/trackgen/objects.cpp	2010-05-31 23:45:01.000000000 +0200
+@@ -32,7 +32,11 @@
+ #endif
+ #include <math.h>
+ #include <plib/ssg.h>
+-#include <GL/glut.h>
++#ifdef __APPLE__
++    #include <GLUT/glut.h>
++#else
++    #include <GL/glut.h>
++#endif
+ 
+ #include <tgfclient.h>
+ #include <track.h>
+diff -ru torcs-1.3.1/src/tools/trackgen/relief.cpp torcs-1.3.1-mac/src/tools/trackgen/relief.cpp
+--- torcs-1.3.1/src/tools/trackgen/relief.cpp	2008-11-09 18:50:23.000000000 +0100
++++ torcs-1.3.1-mac/src/tools/trackgen/relief.cpp	2010-05-31 23:45:01.000000000 +0200
+@@ -33,7 +33,11 @@
+ #endif
+ #include <math.h>
+ #include <plib/ssg.h>
+-#include <GL/glut.h>
++#ifdef __APPLE__
++    #include <GLUT/glut.h>
++#else
++    #include <GL/glut.h>
++#endif
+ 
+ #include <tgfclient.h>
+ #include <track.h>
