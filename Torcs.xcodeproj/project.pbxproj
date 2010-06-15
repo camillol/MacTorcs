@@ -1803,6 +1803,7 @@
 		1362F80411AF009300AF3D9A /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		1362F80511AF009300AF3D9A /* osspec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = osspec.h; sourceTree = "<group>"; };
 		1362F80611AF009300AF3D9A /* torcs.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = torcs.in; sourceTree = "<group>"; };
+		13C0995F11C8254F006B57C4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		13FFA4FE11B091C700DFC073 /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = data; path = ../data; sourceTree = SOURCE_ROOT; };
 		13FFAD9611B091DD00DFC073 /* doc */ = {isa = PBXFileReference; lastKnownFileType = folder; name = doc; path = ../doc; sourceTree = SOURCE_ROOT; };
 		13FFB01511B0952900DFC073 /* isnan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = isnan.h; sourceTree = "<group>"; };
@@ -1822,7 +1823,6 @@
 		13FFB02511B0952900DFC073 /* v4_t.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = v4_t.h; sourceTree = "<group>"; };
 		13FFB04F11B0964200DFC073 /* mac_setup_resources.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mac_setup_resources.mk; sourceTree = "<group>"; };
 		13FFB05011B0964200DFC073 /* torcs-1.3.1-mac.diff */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "torcs-1.3.1-mac.diff"; sourceTree = "<group>"; };
-		13FFB95911B2AF6600DFC073 /* README.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = README.rtf; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Torcs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Torcs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -4400,7 +4400,7 @@
 		29B97314FDCFA39411CA2CEA /* Torcs */ = {
 			isa = PBXGroup;
 			children = (
-				13FFB95911B2AF6600DFC073 /* README.rtf */,
+				13C0995F11C8254F006B57C4 /* README.md */,
 				0FEAC82D0DADBF0700FE87DD /* src */,
 				13FFAD9611B091DD00DFC073 /* doc */,
 				13FFA4FE11B091C700DFC073 /* data */,
