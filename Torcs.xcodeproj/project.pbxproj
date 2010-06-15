@@ -812,7 +812,6 @@
 		0FD99F990DAB1FE7008A07B8 /* simuv2.so */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = simuv2.so; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FD9A00A0DAB2240008A07B8 /* telemetry.so */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = telemetry.so; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FE722AA0DAC7AD3008D6F50 /* libTorcs.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libTorcs.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		0FEABBF10DADB6B400FE87DD /* Readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Readme.txt; path = Frameworks/Readme.txt; sourceTree = "<group>"; };
 		0FEABBF50DADB80800FE87DD /* Torcs.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = Torcs.icns; path = Resources/Torcs.icns; sourceTree = "<group>"; };
 		0FEABC8D0DADBCE800FE87DD /* libpng.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libpng.framework; path = Frameworks/libpng.framework; sourceTree = "<group>"; };
 		0FEABC910DADBCF400FE87DD /* zlib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = zlib.framework; path = Frameworks/zlib.framework; sourceTree = "<group>"; };
@@ -2054,7 +2053,6 @@
 			children = (
 				29B97323FDCFA39411CA2CEA /* Internal Frameworks */,
 				0FEAB9760DADAE0100FE87DD /* System Frameworks */,
-				0FEABBF10DADB6B400FE87DD /* Readme.txt */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
