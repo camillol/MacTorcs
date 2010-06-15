@@ -9,7 +9,6 @@ of the final application bundle. The Mac-specific changes to the source code hav
 minimize impact (for instance, there is now no need to change the way learning and tmath headers are
 included). As a result, this port should be easier to maintain and adapt to future versions of Torcs.
 
-Enjoy!  
 Camillo Lugaresi
 
 How to install
