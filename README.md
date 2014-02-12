@@ -1,9 +1,9 @@
 About
 -----
-This project contains all necessary files to patch and compile the original Torcs 1.3.1 sources into
-a bundled Mac OS X application using Xcode.
+This project contains all necessary files to patch and compile the original Torcs 1.3.5 sources into
+a bundled Mac OS X application using Xcode 5.
 
-The Xcode project is based on previous [work][2] by Stephen Hudson and others, with vast changes to
+The Xcode project is a fork of [MacTorcs][2] by Camillo based on others' work, with vast changes to
 streamline the build, leverage the existing Torcs makefiles for installing data, and reduce the size
 of the final application bundle. The Mac-specific changes to the source code have been redone to
 minimize impact (for instance, there is now no need to change the way learning and tmath headers are
@@ -13,8 +13,8 @@ Camillo Lugaresi
 
 How to install
 --------------
-- Download the Torcs 1.3.1 source package from SourceForge: [torcs-1.3.1.tar.bz2][1]
-- Extract it, and put the MacTorcs folder inside the torcs-1.3.1 folder
+- Download the Torcs 1.3.5 source package from SourceForge: [torcs-1.3.5.tar.bz2][1]
+- Extract it, and put the MacTorcs folder inside the torcs-1.3.5 folder
 - Open the Torcs project
 - Build the "Apply patch" target to patch the source code for Mac support
 - Build the "Torcs.app" target to build Torcs as a Mac application
@@ -37,5 +37,5 @@ TODO
 - Save settings in the Preferences folder instead of modifying the application bundle.
 
 
-[1]: http://sourceforge.net/projects/torcs/files/all-in-one/1.3.1/torcs-1.3.1.tar.bz2/download
-[2]: http://publish.uwo.ca/~shudson2/Home/Blog/7805725A-C647-41F0-B9C2-B91E8388D4EC.html
+[1]: http://sourceforge.net/projects/torcs/files/all-in-one/1.3.5/torcs-1.3.5.tar.bz2/download
+[2]: https://github.com/camillol/MacTorcs.git
