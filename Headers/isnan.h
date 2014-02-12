@@ -5,7 +5,4 @@
  instead.
  */
 
-#define isnan(x)	\
-(	sizeof (x) == sizeof(float )	?	__inline_isnanf((float)(x))	\
-:	sizeof (x) == sizeof(double)	?	__inline_isnand((double)(x))	\
-:	__inline_isnan ((long double)(x)))
+#define isnan(x) std::isnan(x)

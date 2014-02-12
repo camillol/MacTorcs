@@ -12,18 +12,6 @@ diff -ru torcs-1.3.1/data/tracks/aalborg/Makefile torcs-1.3.1-mac/data/tracks/aa
  
  data-tracks-road_PKGFILES	= $(DATA)
  
-diff -ru torcs-1.3.1/data/tracks/road/alpine-2/Makefile torcs-1.3.1-mac/data/tracks/road/alpine-2/Makefile
---- torcs-1.3.1/data/tracks/road/alpine-2/Makefile	2008-06-05 01:09:11.000000000 +0200
-+++ torcs-1.3.1-mac/data/tracks/road/alpine-2/Makefile	2010-06-16 00:23:09.000000000 +0200
-@@ -23,7 +23,7 @@
- 			arbor2_n.rgb concrete2.rgb shadow2.rgb tr-stone-wall.rgb truck_arbor_berniw_n.rgb \
- 			truck_arbor_dummy_n.rgb truck_arbor_hymie_n.rgb truck_arbor_inferno_n.rgb \
- 			truck_arbor_mouse_n.rgb truck_arbor_ole_n.rgb truck_arbor_speedy_n.rgb \
--			truck_arbor_tp_n.rgb truck_arbor_usr_n.rgb alpine-2.png armco2_arbor.png \
-+			truck_arbor_tp_n.rgb truck_arbor_usr_n.rgb armco2_arbor.png \
- 			armco_snow_arbor.png armcoturn_arbor.png background.png BARS_tree_n.png BLBDBK.png \
- 			BLDG05_tree.png brick01.png cliff.png CMNTA.png concdark.png CONCRE.png \
- 			concrete01.png concwall2.png concwall.png GRDRA_tree_n.png ice.png LOGOMELA.png \
 diff -ru torcs-1.3.1/data/tracks/road/forza/Makefile torcs-1.3.1-mac/data/tracks/road/forza/Makefile
 --- torcs-1.3.1/data/tracks/road/forza/Makefile	2008-02-24 13:55:08.000000000 +0100
 +++ torcs-1.3.1-mac/data/tracks/road/forza/Makefile	2010-06-16 00:23:09.000000000 +0200
